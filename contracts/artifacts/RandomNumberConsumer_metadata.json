@@ -1,0 +1,124 @@
+{
+	"compiler": {
+		"version": "0.6.7+commit.b8d736ae"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getRandomNumber",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "requestId",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "randomResult",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "requestId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "randomness",
+						"type": "uint256"
+					}
+				],
+				"name": "rawFulfillRandomness",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {
+				"constructor": "Constructor inherits VRFConsumerBase \r Network: Kovan Chainlink VRF Coordinator address: 0xdD3782915140c8f3b190B5D67eAc6dc5760C46E9 LINK token address:                0xa36085F69e2889c224210F603D836748e7dC0088 Key Hash: 0x6c3699283bda56ad74f6b855546325b68d482e983852a7a82979cc4807b641f4",
+				"getRandomNumber()": {
+					"notice": "Requests randomness "
+				}
+			},
+			"notice": "THIS IS AN EXAMPLE CONTRACT WHICH USES HARDCODED VALUES FOR CLARITY. PLEASE DO NOT USE THIS CODE IN PRODUCTION."
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/VRFConsumer.sol": "RandomNumberConsumer"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts/src/v0.6/VRFConsumerBase.sol": {
+			"keccak256": "0x6023d0e1100e66888001da1820d24c5e3713869bfe28e56200ce952979de3205",
+			"urls": [
+				"bzz-raw://2e17a936de43d4e475629f43d1af475bfc94e57bffea918ead7264960d5b091e",
+				"dweb:/ipfs/QmSAF1EAHUVReWHVArbitMZY7gX6drda8qnyus4ym9zA1H"
+			]
+		},
+		"@chainlink/contracts/src/v0.6/VRFRequestIDBase.sol": {
+			"keccak256": "0x0c3bd40c63dac8398a979b1228c8ecb1c269c157dd16f2dce2086d2270b65b22",
+			"urls": [
+				"bzz-raw://ed9db87be9dfb0f763a556d8d80356b08282b8ea48484838cdf470a5c3cd15d5",
+				"dweb:/ipfs/QmPLhwDAS3TPDiEQmTyqXnWBqwEMBSbXtjEiQDSGejoiPt"
+			]
+		},
+		"@chainlink/contracts/src/v0.6/interfaces/LinkTokenInterface.sol": {
+			"keccak256": "0xe245a7be950c94d87bb775ae9ee9fbd693fbe2987778e6ce0b04605ea44b7b68",
+			"urls": [
+				"bzz-raw://bd2c3165d949fc66fe407b96eb3dc2092c7e800f4c073b411bf7b96de3e156c9",
+				"dweb:/ipfs/QmcfJhR1Np4GsLWnww2Duqks2wEzYk8VDTvCAYy7MisG1r"
+			]
+		},
+		"@chainlink/contracts/src/v0.6/vendor/SafeMathChainlink.sol": {
+			"keccak256": "0x105f5e9491f3d0bbdd4f1c7627eb839d69b944bfd803028a01cc083597692c1f",
+			"urls": [
+				"bzz-raw://ec45a2748a024a947a921183d4102d5e206808588501d85ddc4f5668a009bc73",
+				"dweb:/ipfs/QmRNAMpq7LdWFnJ7wWKGbUuAcURaGSS42PMxtQ4vjrHmp9"
+			]
+		},
+		"contracts/VRFConsumer.sol": {
+			"keccak256": "0x62ac7e94413dfa02b10e896c87ccda58ae74f6093c95ab03d26f15803f1f8d03",
+			"urls": [
+				"bzz-raw://660ea5f3c1d593c2ed4ad29760ad318c32be4874a205c2e710e4891417cf4674",
+				"dweb:/ipfs/QmTrNBJ8vNXY6X5SCFDVFekGHJ9ZnES1DncboNsLe5xBJQ"
+			]
+		}
+	},
+	"version": 1
+}
