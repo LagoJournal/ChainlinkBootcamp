@@ -1,1 +1,1 @@
-# Contracts for the Chainlink smart contract developer Bootcamp
+# My approach to the Chainlink smart contract developer Bootcamp contract projects
